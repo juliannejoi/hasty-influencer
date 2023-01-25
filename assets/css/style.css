@@ -1,3 +1,7 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik', sans-serif;
+}
 :root{
     /* colors */
     --color1: #080F61;
@@ -8,7 +12,26 @@ nav #headerCSS{
     background-color: var(--color1);
 }
 
-
+#btnCSS{
+    background-color: var(--color3);
+    border-radius: 5px;
+}
+#imgCSS{
+    height: 60px;
+    
+}
+#navCSS{
+    background-color: white;;
+}
+#imglogo {
+    text-align: center;
+    margin-left: 10%;
+    float: center;
+    height:  4.1rem;
+    align-items: center;
+    align-content: center;
+    
+}
 
 
 
