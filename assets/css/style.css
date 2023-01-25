@@ -32,6 +32,30 @@ nav #headerCSS{
     align-content: center;
     
 }
+/* .fg {
+    position:relative;
+    border: 1px dotted white;
+    width: 3px;
+    height: 3px;
+    background-color: black;
+    box-sizing: border-box;
+    transform: scale(11);
+  } */
+  .input-field label {
+    /* color: rgb(42, 27, 172); */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  #txtLocation{
+    text-align: center;
+  }
+  #fixCursor{
+    cursor: default;
+  }
+  .containerCSS{
+    height: 25vw;
+  }
+  
 
 
 
