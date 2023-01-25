@@ -13,4 +13,4 @@
 * WHEN User clicks the google map 
 * THEN the google map is responsive in what they would like to view from it .
 
-![ZUMAWIREFRAME](https://user-images.githubusercontent.com/118871549/214473359-aca96fb1-d833-4298-8301-e5065ba84aa0.PNG)
+![ZUMAWIREFRAME](https://user-images.githubusercontent.com/118871549/214473610-df1fc4e6-ce62-42f5-aa5f-b511e510d689.PNG)
