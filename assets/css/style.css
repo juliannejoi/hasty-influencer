@@ -1,1 +1,9 @@
-
+:root{
+    /* colors */
+    --color1: #080F61;
+    --color2: #612911;
+    --color3: #AD3D0E;
+}
+nav #headerCSS{
+    background-color: var(--color1);
+}
