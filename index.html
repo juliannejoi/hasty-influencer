@@ -1,63 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- css framework -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;1,700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hasty-influencers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;0,800;1,700&family=Rubik:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hasty-influencers</title>
 </head>
+
 <body>
-    <!-- navBAR -->
+  <!-- navBAR -->
   <div class="navbar-fixed">
     <nav id='navCSS'>
       <div class="nav-wrapper" id='headerCSS'>
 
-        <a href="#!" class="brand-logo center">hasty </a><img class="center" id="imglogo"
+        <a href="#!" class="brand-logo center fg">hasty </a><img class="center responsive-img" id="imglogo"
           src="./assets/img/zuma2-removebg-preview.png" alt="">
         <ul class="right hide-on-med-and-down">
           <li><a href="sass.html">Look up locations</a></li>
           <li><a href="badges.html">Devlopers creds</a></li>
-          <li><a class="waves-effect waves-light btn" id="btnCSS">FAVORITES </a></li>
+          <li><a class="waves-effect waves-light btn z-depth-3 pulse" id="btnCSS">FAVORITES </a></li>
         </ul>
       </div>
   </div>
   <!-- FORM -->
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-          <footer class="footer">
-        <img src="./assets/img/twitter-logo-facebook-logo-instagram-logo-11617972146h3ate2agzi-removebg-preview.png" class="socialIcon" alt="socialIcon">
-        <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-        </ul>
-        <p>&copy;2023 Project Zuma | All Rights Reserved</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+  <div class="divider " ></div>
+  <div class="section container" id ="fixCursor">
+    <h5 class="center-align z-depth-1" id ="fixCursor">SEARCH UP DESTINATIONS</h5>
+
+    <div class=" row hoverable container">
+      <div class="input-field col s12 ">
+        <input placeholder="New York" id="txtLocation" type="text" class="validate" data-length="10">
+        <label class="active " for="txtLocation" id="txtLocation"></label>
+      </div>
+    </div>
+    <div class="row container">
+      <div class="col s6" >6-columns (one-half)</div>
+      <div class="col s6">6-columns (one-half)</div>
+      <div class="col s12 containerCSS" id="map"></div>
+    </div>
+
+
+    
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+    <img src="./assets/img/twitter-logo-facebook-logo-instagram-logo-11617972146h3ate2agzi-removebg-preview.png"
+      class="socialIcon" alt="socialIcon">
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item "><a class="menu__link" href="#">Contact</a></li>
+    </ul>
+    <p>&copy;2023 Project Zuma | All Rights Reserved</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script async
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYH_orMJIe96kCV6ZCtvKvptlZcgpgA4Q&libraries=localContext&v=beta&callback=initMap">
+</script>
 </body>
 
 </html>
