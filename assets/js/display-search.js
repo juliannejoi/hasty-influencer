@@ -1,8 +1,11 @@
+var txtAlert = document.querySelector('#innercontaineer');
 
 var savedList = [];
 var savedListEl = document.querySelector("#savedCon")
 var x = 40.7128;
 var y = -74.0060;
+txtAlert.style.display = "none";
+
 function init(){
     var storedMaps = JSON.parse(localStorage.getItem('Savedlocation'))
     console.log(storedMaps)
@@ -57,11 +60,34 @@ function initMap() {
          initMap()
         });
       } else {
-        alert('Error: ' + response.statusText);
+        // alert('Error: ' + response.statusText);
+        var time = setInterval(function(){
+          timercount --;
+        console.log('word is here');
+        txtAlert.style.display = "block";
+       
+        txtAlert.innerHTML = '<img class ="alertimg" src="https://media.tenor.com/DCI2uoqFUvEAAAAd/the-office-the.gifd" alt="">  ERROR: '+response.statusText + timercount;
+      if (timercount == 0) {
+        txtAlert.style.display = "none";
+        clearInterval(time)
+        
+      }
+      },900)
       }
     })
     .catch(function (error) {
-      alert('Unable to connect to GitHub');
+      // alert('Unable to connect to GitHub');
+      var time = setInterval(function(){
+        timercount --;
+      txtAlert.style.display = "block";
+     
+      txtAlert.innerHTML = '<img class ="alertimg" src="https://media.tenor.com/DCI2uoqFUvEAAAAd/the-office-the.gifd" alt="">  UNABLE TO CONNECT TO GITHUB ';
+    if (timercount == 0) {
+      txtAlert.style.display = "none";
+      clearInterval(time)
+      
+    }
+    },900)
     });
   }
   
@@ -75,8 +101,6 @@ function renderSavedLoc(){
         console.log(locationName)
         var div = document.createElement('button');
        div.innerHTML = savedList[i];
-
-    //     li.setAttribute('class', i);
         savedListEl.appendChild(div)
         
     }

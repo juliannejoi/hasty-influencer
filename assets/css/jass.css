@@ -38,3 +38,20 @@ button{
     padding: 10px;
     border-radius: 5px;
   }
+  #innercontaineer{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik', sans-serif;
+    background-color:var(--color3);
+    height: 302px;
+    width: 300px;
+    z-index: 9;
+    color: white;
+    display: block;
+    position: sticky;
+    
+  }
+  .alertimg{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
