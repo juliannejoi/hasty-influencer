@@ -1,8 +1,11 @@
+var txtAlert = document.querySelector('#innercontaineer');
 
 var savedList = [];
 var savedListEl = document.querySelector("#savedCon")
 var x = 40.7128;
 var y = -74.0060;
+txtAlert.style.display = "none";
+
 function init(){
     var storedMaps = JSON.parse(localStorage.getItem('Savedlocation'))
     console.log(storedMaps)

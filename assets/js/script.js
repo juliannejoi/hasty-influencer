@@ -24,7 +24,7 @@ selector.addEventListener("keypress", function (event) {
 
   if (event.keyCode === 13) {
     event.preventDefault();
-    btnSaveLoc.disabled = false;
+   
     userSearch = document.querySelector('#txtLocation').value;
 
     if (userSearch) {
@@ -50,6 +50,7 @@ var getLogLat = function (location) {
 
   fetch(cordapi).then(function (response) {
     if (response.ok) {
+      btnSaveLoc.disabled = false;
       console.log(response);
       response.json().then(function (data) {
         console.log(data);
