@@ -79,7 +79,20 @@ font-family: 'Rubik', sans-serif;
     height: 250px;
     object-fit: cover;
   }
+  .imgC{
+    /* display: flex; */
+    width: auto;
+    margin: 10px;
+    box-shadow: 5px 5px black;
+  }
+  .imgP{
+    /* display: flex; */
+    /* width: 35vw; */
+    /* margin: 10px; */
+    
 
+
+  }
 
 
 
