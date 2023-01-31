@@ -1,1 +1,40 @@
 
+body{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik', sans-serif;
+}
+:root{
+    /* colors */
+    --color1: #080F61;
+    --color2: #612911;
+    --color3: #C96065;
+}
+nav #headerCSS{
+    background-color: var(--color1);
+}
+#imglogo {
+    text-align: center;
+    margin-left: 10%;
+    float: center;
+    height:  4.1rem;
+    align-items: center;
+    align-content: center;
+    
+}
+.containerCSS2{
+    height: auto;
+    margin-top: 20px;
+}
+.containerCSS{
+    height: 480px;
+    margin-top: 20px;
+  }
+button{
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    background-color: var(--color3);
+    color: white;
+    border: #C96065;
+    padding: 10px;
+    border-radius: 5px;
+  }
