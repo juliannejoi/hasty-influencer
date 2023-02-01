@@ -36,7 +36,7 @@ selector.addEventListener("keypress", function (event) {
 
   if (event.keyCode === 13) {
     event.preventDefault();
-   
+
     userSearch = document.querySelector('#txtLocation').value;
 
     if (userSearch) {
@@ -78,35 +78,35 @@ var getLogLat = function (location) {
       });
     } else {
       // alert('Error: ' + response.statusText);
-      var time = setInterval(function(){
-        timercount --;
-      console.log('word is here');
-      txtAlert.style.display = "block";
-     
-      txtAlert.innerHTML = '<img class ="alertimg" src="https://media.tenor.com/DCI2uoqFUvEAAAAd/the-office-the.gifd" alt="">  ERROR: '+response.statusText + timercount;
-    if (timercount == 0) {
-      txtAlert.style.display = "none";
-      clearInterval(time)
-      
-    }
-    },900)
+      var time = setInterval(function () {
+        timercount--;
+        console.log('word is here');
+        txtAlert.style.display = "block";
+
+        txtAlert.innerHTML = '<img class ="alertimg" src="https://media.tenor.com/DCI2uoqFUvEAAAAd/the-office-the.gifd" alt="">  ERROR: ' + response.statusText + timercount;
+        if (timercount == 0) {
+          txtAlert.style.display = "none";
+          clearInterval(time)
+
+        }
+      }, 900)
     }
   })
-  .catch(function (error) {
-    //('Unable to connect to GitHub');
-    var time = setInterval(function(){
-      timercount --;
-    txtAlert.style.display = "block";
-   
-    txtAlert.innerHTML = '<img class ="alertimg" src="https://media.tenor.com/DCI2uoqFUvEAAAAd/the-office-the.gifd" alt="">  UNABLE TO CONNECT TO GITHUB ';
-  if (timercount == 0) {
-    txtAlert.style.display = "none";
-    clearInterval(time)
-    
-  }
-  },900)
-  });
-console.log(userSearch)
+    .catch(function (error) {
+      //('Unable to connect to GitHub');
+      var time = setInterval(function () {
+        timercount--;
+        txtAlert.style.display = "block";
+
+        txtAlert.innerHTML = '<img class ="alertimg" src="https://media.tenor.com/DCI2uoqFUvEAAAAd/the-office-the.gifd" alt="">  UNABLE TO CONNECT TO GITHUB ';
+        if (timercount == 0) {
+          txtAlert.style.display = "none";
+          clearInterval(time)
+
+        }
+      }, 900)
+    });
+  console.log(userSearch)
 }
 
 var getWeatherData = function () {
@@ -132,11 +132,11 @@ var getWeatherData = function () {
           console.log(dayFour);
           console.log(dayFive);
 
-          nightOne.textContent = "Feels Like - " + data.list[0].main.feels_like ;
-          nightTwo.textContent = "Feels Like - " +data.list[1].main.feels_like ;
-          nightThree.textContent = "Feels Like - " + data.list[2].main.feels_like ;
-          nightFour.textContent = "Feels Like - " + data.list[3].main.feels_like ;
-          nightFive.textContent = "Feels Like - " +  data.list[4].main.feels_like ;
+          nightOne.textContent = "Feels Like - " + data.list[0].main.feels_like;
+          nightTwo.textContent = "Feels Like - " + data.list[1].main.feels_like;
+          nightThree.textContent = "Feels Like - " + data.list[2].main.feels_like;
+          nightFour.textContent = "Feels Like - " + data.list[3].main.feels_like;
+          nightFive.textContent = "Feels Like - " + data.list[4].main.feels_like;
           console.log(nightOne);
           console.log(nightTwo);
           console.log(nightThree);
@@ -194,34 +194,34 @@ btnSaveLoc.addEventListener('click', function () {
   }
   if (savedLoc.includes(savedWord)) {
 
-var timercount = 11;
-    var time = setInterval(function(){
-      timercount --;
-    console.log('word is here');
-    txtAlert.style.display = "block";
-   
-    txtAlert.innerHTML = '<img class ="alertimg" src="https://media.tenor.com/DCI2uoqFUvEAAAAd/the-office-the.gifd" alt="">  this city has already been saved '+ timercount;
-  if (timercount == 0) {
-    txtAlert.style.display = "none";
-    clearInterval(time)
-    
-  }
-  },900)
+    var timercount = 11;
+    var time = setInterval(function () {
+      timercount--;
+      console.log('word is here');
+      txtAlert.style.display = "block";
+
+      txtAlert.innerHTML = '<img class ="alertimg" src="https://media.tenor.com/DCI2uoqFUvEAAAAd/the-office-the.gifd" alt="">  this city has already been saved ' + timercount;
+      if (timercount == 0) {
+        txtAlert.style.display = "none";
+        clearInterval(time)
+
+      }
+    }, 900)
 
 
     return
   } else if (savedWord == "") {
-    var time = setInterval(function(){
-      timercount --;
-    txtAlert.style.display = "block";
-   
-    txtAlert.innerHTML = '<img class ="alertimg" src="https://media.tenor.com/DCI2uoqFUvEAAAAd/the-office-the.gifd" alt=""> there is nothing to be saved '+ timercount;
-  if (timercount == 0) {
-    txtAlert.style.display = "none";
-    clearInterval(time)
-    
-  }
-  },900)
+    var time = setInterval(function () {
+      timercount--;
+      txtAlert.style.display = "block";
+
+      txtAlert.innerHTML = '<img class ="alertimg" src="https://media.tenor.com/DCI2uoqFUvEAAAAd/the-office-the.gifd" alt=""> there is nothing to be saved ' + timercount;
+      if (timercount == 0) {
+        txtAlert.style.display = "none";
+        clearInterval(time)
+
+      }
+    }, 900)
     console.log('no word here ');
     return
   } else {
