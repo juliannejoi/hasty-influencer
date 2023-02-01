@@ -13,6 +13,18 @@ var userSearch = document.querySelector('#txtLocation');
 var selector = document.querySelector('#txtLocation');
 txtAlert.style.display = "none";
 btnSaveLoc.disabled = true;
+var dayOne = document.querySelector("#dayOne");
+var dayTwo = document.querySelector("#dayTwo");
+var dayThree = document.querySelector("#dayThree");
+var dayFour = document.querySelector("#dayFour");
+var dayFive = document.querySelector("#dayFive");
+
+var nightOne = document.querySelector("#nightOne");
+var nightTwo = document.querySelector("#nightTwo");
+var nightThree = document.querySelector("#nightThree");
+var nightFour = document.querySelector("#nightFour");
+var nightFive = document.querySelector("#nightFive");
+
 
 btnSaved.addEventListener('click', function () {
 
@@ -61,6 +73,7 @@ var getLogLat = function (location) {
         x = lat[0].lat;
         y = long[0].lon;
         console.log(typeof x);
+        getWeatherData();
         initMap();
       });
     } else {
@@ -95,6 +108,54 @@ var getLogLat = function (location) {
   });
 console.log(userSearch)
 }
+
+var getWeatherData = function () {
+  var weatherApi = "https://api.openweathermap.org/data/2.5/forecast?lat=" + x + "&lon=" + y + "&cnt=5&appid=9caf1333480d692c12783172b60d65b1";
+  console.log(weatherApi);
+
+  fetch(weatherApi)
+    .then(function (response) {
+      if (response.ok) {
+        console.log(response);
+        console.log("hi");
+        response.json().then(function (data) {
+          console.log(data.list[0]);
+
+          dayOne.textContent = "Temp - " + data.list[0].main.temp;
+          dayTwo.textContent = "Temp - " + data.list[1].main.temp;
+          dayThree.textContent = "Temp - " + data.list[2].main.temp;
+          dayFour.textContent = "Temp - " + data.list[3].main.temp;
+          dayFive.textContent = "Temp - " + data.list[4].main.temp;
+          console.log(dayOne)
+          console.log(dayTwo);
+          console.log(dayThree);
+          console.log(dayFour);
+          console.log(dayFive);
+
+          nightOne.textContent = "Feels Like - " + data.list[0].main.feels_like ;
+          nightTwo.textContent = "Feels Like - " +data.list[1].main.feels_like ;
+          nightThree.textContent = "Feels Like - " + data.list[2].main.feels_like ;
+          nightFour.textContent = "Feels Like - " + data.list[3].main.feels_like ;
+          nightFive.textContent = "Feels Like - " +  data.list[4].main.feels_like ;
+          console.log(nightOne);
+          console.log(nightTwo);
+          console.log(nightThree);
+          console.log(nightFour);
+          console.log(nightFive)
+
+          showWeatherData(data);
+          initMap();
+        });
+      } else {
+        alert("Error: " + response.statusText);
+      }
+    })
+    .catch(function (error) {
+      alert("Unable to connect to GitHub");
+    });
+  console.log(userSearch);
+};
+
 // google map api
 function initMap() {
 

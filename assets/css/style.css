@@ -94,6 +94,74 @@ font-family: 'Rubik', sans-serif;
 
   }
 
+  .weatherContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px; 
+    color: #fff;
+  }
+
+  .current-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+ 
+  .current-info .others {
+    display: flex;
+    flex-direction: column;
+    background: #3c3c44;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+  }
+
+  .current-info .others .weather-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .weather-forecast {
+    background: white;
+    padding: 25px;
+    position: left;
+    bottom: 0;
+    display: flex ;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .weather-forecast .weather-forecast-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+      border: 1px solid #3c3c44;
+      border-radius: 10px;
+      padding: 15px;
+      background: rgba(0, 0, 0, 2);
+    }
+  
+  .weather-forecast{
+    display: flex;
+
+  }
+
+  .weather-forecast .weather-forecast-item .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .weather-forecast .weather-forecast-item .temp{
+    font-weight: 100;
+    font-size: 12px;
+  }
 
 
 
