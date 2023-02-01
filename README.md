@@ -1,8 +1,9 @@
 # *hasty influencers*
+https://juliannejoi.github.io/project-zuma/
 
 ## Who we are
 
-The 'Go To' destination search tool for every influencers’ last minute travel planning.
+*hasty influencers* is the 'Go To' destination search tool for every influencers’ last minute travel planning.
 
 Are you a travel influencer in immediate need for fresh and new  social media content?<br>
 The *hasty influencer* application will assist in search of your next last minute travel destination.<br>
