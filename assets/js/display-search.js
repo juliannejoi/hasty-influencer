@@ -40,7 +40,7 @@ savedListEl.addEventListener('click', function (e) {
   getLogLat(btn)
 })
 var getLogLat = function (location) {
-  var cordapi = "http://api.openweathermap.org/geo/1.0/direct?q=" + location + "&lon&limit=1&appid=9caf1333480d692c12783172b60d65b1"
+  var cordapi = "https://api.openweathermap.org/geo/1.0/direct?q=" + location + "&lon&limit=1&appid=9caf1333480d692c12783172b60d65b1"
   fetch(cordapi).then(function (response) {
     if (response.ok) {
       console.log(response);
