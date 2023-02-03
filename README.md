@@ -54,7 +54,7 @@ THEN the google map is responsive in what they would like to view from it.<br>
 - Sample of saved search using "SAVE" button. After then selecting "FAVORITES" button,
 - the traveler is navigated to the "SAVED" page. 
 ```
-![mockup2](https://user-images.githubusercontent.com/118871549/215969658-2c5e8555-5eaa-4a44-9857-2f7f54b302f5.jpg)
+![mockup2](https://user-images.githubusercontent.com/118871549/216492044-4a0bde28-d225-415a-bec9-ab6666ba866d.jpg)
 
 ```diff
 - Sample of failure notification, when user attempts to save a location that has already
